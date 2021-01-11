@@ -19,8 +19,12 @@ out the answer.
 Usage:
 
 ```
-node brute-force-find-typo.js 5Jhacv9gEyp7yosCeq1zgRRQSitGZZ3Z2NbgKG9BFXHW16iYU4z
+node brute-force-find-typo.js 5J5gbf6QfQHdS7SXQuRtep3zKshukU7fXWCuBDegcZ5LFavVdQp
 ```
+
+Found valid WIF private key: 5J5gbf6QfQHdS72XQuRtep3zKshukU7fXWCuBDegcZ5LFavVdQp
+by replacing 'S' with '2' at position 14
+Address: FY9bonioz6YUcEG9ctgoALztyQnkvXgBF2
 
 Once you find the valid WIF private key, you can import it into a wallet like Electrum-GRS
 

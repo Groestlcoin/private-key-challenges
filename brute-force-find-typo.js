@@ -5,7 +5,7 @@
  * Usage:
  *
  * npm i
- * node brute-force-find-typo.js 5Jhacv9gEyp7yosCeq1zgRRQSitGZZ3Z2NbgKG9BFXHW16iYU4z
+ * node brute-force-find-typo.js 5J5gbf6QfQHdS7SXQuRtep3zKshukU7fXWCuBDegcZ5LFavVdQp
  */
 
 const bitcoin = require('groestlcoinjs-lib')
