@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bitcoinjs-lib": "^5.2.0"
+    "groestlcoinjs-lib": "^5.1.10"
   }
 }

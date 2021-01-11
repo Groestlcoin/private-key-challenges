@@ -1,14 +1,14 @@
 /**
  * Finds a single typo in a WIF-encoded private key but brute-force swapping
  * out each valid character until it finds a valid checksum.
- * 
+ *
  * Usage:
- * 
+ *
  * npm i
  * node brute-force-find-typo.js 5Jhacv9gEyp7yosCeq1zgRRQSitGZZ3Z2NbgKG9BFXHW16iYU4z
  */
 
-const bitcoin = require('bitcoinjs-lib')
+const bitcoin = require('groestlcoinjs-lib')
 
 // Read in the private key from the command line
 const keyWithTypo = process.argv[2]
@@ -30,7 +30,7 @@ function replaceAt(str, index, replacement) {
 
 // For each position in the private key (starting at the second), we replace the character
 // with every valid Base58 character until we find a valid private key.
-for (let index = 1; index < keyWithTypo.length; index++) {    
+for (let index = 1; index < keyWithTypo.length; index++) {
     for (const character of BASE_58_CHARACTERS) {
         try {
             let keyWithTypoCopy = keyWithTypo
